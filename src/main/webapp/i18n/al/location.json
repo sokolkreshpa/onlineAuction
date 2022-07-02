@@ -1,0 +1,29 @@
+{
+  "onlineAuctionApp": {
+    "location": {
+      "home": {
+        "title": "Locations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Krijo një të ri Location",
+        "createOrEditLabel": "Krijo ose përpuno një Location",
+        "search": "Kërko për Location",
+        "notFound": "No Locations found"
+      },
+      "created": "Një Location i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Location u përpunua me identifikues {{ param }}",
+      "deleted": "Një Location u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Location {{ id }}?"
+      },
+      "detail": {
+        "title": "Location"
+      },
+      "id": "ID",
+      "streetAddress": "Street Address",
+      "postalCode": "Postal Code",
+      "city": "City",
+      "country": "Country",
+      "id": "Id"
+    }
+  }
+}
