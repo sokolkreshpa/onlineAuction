@@ -1,8 +1,15 @@
 
 entity Product {
-	id Number required,
+
     productname String,
-    productCategoryId Number,
+    productSpecification String,
+    actualCost Long,
+    ccy String,
+    creationDate Instant
+}
+
+entity ProductCategory {
+    productname String,
     locationId Number,
     productSpecification String,
     actualCost Number,
@@ -11,14 +18,13 @@ entity Product {
 }
 
 entity ProductCategory {
-	id Number,
     categoryDescription String
 }
 
 // an ignored comment
 /** not an ignored comment */
 entity Location {
-    id Number required,
+
 	streetAddress String,
 	postalCode String,
 	city String,
@@ -26,6 +32,9 @@ entity Location {
 }
 
 entity Auction {
+    bidStartTime Instant,
+    bidEndTime Instant,
+    amount Long,
 	id Number required,
     productId Number,
     bidStartTime Timestamp,
@@ -35,17 +44,21 @@ entity Auction {
 }
 
 entity Bid {
+    bidTime Instant,
+    amount Long,
+    ccy String,
 	id Number required,
     auctionId Number,
     bidTime Timestamp,
     amount Number,
     ccy String,
     userId Number
+
 }
 
 entity Users
 {
-id Number required,
+
 username String,
 name String,
 surname String,

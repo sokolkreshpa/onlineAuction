@@ -1,0 +1,30 @@
+{
+  "onlineAuctionApp": {
+    "auction": {
+      "home": {
+        "title": "Auctions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Krijo një të ri Auction",
+        "createOrEditLabel": "Krijo ose përpuno një Auction",
+        "search": "Kërko për Auction",
+        "notFound": "No Auctions found"
+      },
+      "created": "Një Auction i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Auction u përpunua me identifikues {{ param }}",
+      "deleted": "Një Auction u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Auction {{ id }}?"
+      },
+      "detail": {
+        "title": "Auction"
+      },
+      "id": "ID",
+      "bidStartTime": "Bid Start Time",
+      "bidEndTime": "Bid End Time",
+      "amount": "Amount",
+      "ccy": "Ccy",
+      "id": "Id",
+      "productId": "Product Id"
+    }
+  }
+}

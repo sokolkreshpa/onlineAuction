@@ -1,0 +1,32 @@
+{
+  "onlineAuctionApp": {
+    "users": {
+      "home": {
+        "title": "Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Krijo një të ri Users",
+        "createOrEditLabel": "Krijo ose përpuno një Users",
+        "search": "Kërko për Users",
+        "notFound": "No Users found"
+      },
+      "created": "Një Users i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Users u përpunua me identifikues {{ param }}",
+      "deleted": "Një Users u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Users {{ id }}?"
+      },
+      "detail": {
+        "title": "Users"
+      },
+      "id": "ID",
+      "username": "Username",
+      "name": "Name",
+      "surname": "Surname",
+      "tel": "Tel",
+      "email": "Email",
+      "ssn": "Ssn",
+      "status": "Status",
+      "id": "Id"
+    }
+  }
+}
