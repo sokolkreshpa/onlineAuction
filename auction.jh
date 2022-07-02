@@ -1,0 +1,78 @@
+
+entity Product {
+
+    productname String,
+    productSpecification String,
+    actualCost Long,
+    ccy String,
+    creationDate Instant
+}
+
+entity ProductCategory {
+    categoryDescription String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	country String
+}
+
+entity Auction {
+    bidStartTime Instant,
+    bidEndTime Instant,
+    amount Long,
+    ccy String
+}
+
+entity Bid {
+    bidTime Instant,
+    amount Long,
+    ccy String,
+}
+
+entity Users
+{
+username String,
+name String,
+surname String,
+tel String,
+email String,
+ssn String,
+status String
+}
+
+relationship OneToMany {
+	ProductCategory{id} to Product{productCategoryId}
+}
+
+relationship OneToMany {
+	Location{id} to Product{locationId}
+}
+
+relationship OneToMany {
+	Product{id} to Auction{productId}
+}
+
+relationship OneToMany {
+	Auction{id} to Bid{auctionId}
+}
+
+relationship OneToOne {
+	Bid{userId} to Users{id}
+}
+// Set pagination options
+paginate Auction, Product with infinite-scroll
+paginate Users with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Location, ProductCategory
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
