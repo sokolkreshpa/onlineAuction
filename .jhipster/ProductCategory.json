@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20220702195410",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "product_category",
+  "fields": [
+    {
+      "fieldName": "categoryDescription",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProductCategory",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "productCategoryId",
+      "relationshipName": "id",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20220702195409",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "product",
+  "fields": [
+    {
+      "fieldName": "productname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productSpecification",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actualCost",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "ccy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creationDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Product",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "auction",
+      "otherEntityRelationshipName": "productId",
+      "relationshipName": "id",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "productCategory",
+      "otherEntityRelationshipName": "id",
+      "relationshipName": "productCategoryId",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "id",
+      "relationshipName": "locationId",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

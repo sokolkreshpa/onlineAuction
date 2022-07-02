@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "changelogDate": "20220702195412",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "auction",
+  "fields": [
+    {
+      "fieldName": "bidStartTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "bidEndTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "ccy",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Auction",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "bid",
+      "otherEntityRelationshipName": "auctionId",
+      "relationshipName": "id",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "id",
+      "relationshipName": "productId",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}
